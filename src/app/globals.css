@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'TorusNotched';
+  src: url('/fonts/TorusNotched-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #18171c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #18171c;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'TorusNotched', Arial, sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #18171c80;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4a6267;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(202, 197, 216, 0.502)
+}
