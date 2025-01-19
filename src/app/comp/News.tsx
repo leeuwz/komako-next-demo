@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+// add function open post page based on index/post id
+
 const newsPosts = [
     {
         date: "19 JAN 2025",
