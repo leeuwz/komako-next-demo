@@ -47,7 +47,10 @@ export default function News() {
             </div>
 
             <div className="flex justify-center my-6">
-                <div className="cursor-pointer uppercase text-[12px] rounded-xl px-[10px] py-[2px] bg-[#494554] hover:bg-[#615C70] transition w-fit">See more news</div>
+                <div className="cursor-pointer uppercase text-[12px] rounded-xl px-[10px] py-[2px] bg-[#494554] hover:bg-[#615C70] transition w-fit"
+                onClick={() => alert("Will be added soon!")}>
+                    See more news
+                </div>
             </div>
 
             {showModal && (
