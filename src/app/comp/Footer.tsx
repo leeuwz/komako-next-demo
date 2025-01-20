@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image"
 
 interface FooterProps {
@@ -36,7 +37,8 @@ export default function Footer({ className }: FooterProps) {
 
                     {/* support/social */}
                     <div className="flex gap-4 justify-center">
-                        <div className="flex items-center border-[3px] rounded-full p-[8px] cursor-pointer">
+                        <div className="flex items-center border-[3px] rounded-full p-[8px] cursor-pointer"
+                        onClick={() => window.open("https://paypal.me/leeuwz", "_blank")}>
                             <Image
                                 src="/icons/heart.svg"
                                 alt="alt"
@@ -45,7 +47,8 @@ export default function Footer({ className }: FooterProps) {
                                 className="invert"
                             />
                         </div>
-                        <div className="flex items-center border-[3px] rounded-full p-[8px] cursor-pointer">
+                        <div className="flex items-center border-[3px] rounded-full p-[8px] cursor-pointer"
+                        onClick={() => window.open("https://x.com/lionzosu", "_blank")}>
                             <Image
                                 src="/icons/twitter.svg"
                                 alt="alt"
