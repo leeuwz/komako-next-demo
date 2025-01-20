@@ -91,14 +91,14 @@ export default function News() {
                             <p className='text-base'>by <span className='font-bold'>komako team</span></p>
                             <p className='my-4'>
                                 At Komako, we’re driven by a vision: to address the challenges we see in osu! today and breathe
-                                new life into the experience. From the steady decline in quality to questionable changes in the
-                                reward system, we felt it was time to create something that offers players a new and improved
+                                new life into the experience. From the decline in quality to questionable changes in the
+                                reward system, we felt it was time to create something that offers players a different/classic
                                 way to enjoy the game.
                             </p>
                             <p className='my-4'>
                                 This idea stemmed from personal frustrations and conversations with friends who
-                                shared my sentiments. When they suggested that my existing private server could become
-                                something more, I knew this project had the potential to bring our collective vision to life.
+                                shared the same feelings. When they suggested that my existing private server could become
+                                something more, I knew this project might be a fun idea.
                             </p>
                             <p className='font-bold text-lg'>Design and Inspiration</p>
                             <p className='mb-4'>
@@ -107,8 +107,8 @@ export default function News() {
                             </p>
                             <p className='font-bold text-lg'>Why Komako?</p>
                             <p className='mb-4'>
-                                Our aim is not to compete with Bancho but to provide an alternative—a space for players who
-                                prefer the old reward system and want to relive what we consider osu!’s golden days.
+                                Our goal/motive is not to compete with Bancho but to provide an alternative experience for players who
+                                prefer the old reward system and rather take a step back from having to perform or to try something completely different.
                                 But we’re not just looking back; we’re also moving forward.
                             </p>
                             <div className='my-4'>
@@ -116,20 +116,19 @@ export default function News() {
                                 <ol className='pl-5'>
                                     <li style={{ listStyleType: 'disc' }}><span className='font-bold'>New features</span> previously unseen on the official server.</li>
                                     <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Customizability</span> options to let players tailor their experience.</li>
-                                    <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Innovative challenges</span> to reignite the thrill of competition.</li>
+                                    <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Innovative challenges</span> take things to a higher level.</li>
                                 </ol>
                             </div>
                             <p className='my-4'>
-                                This is a community-first project for anyone who shares our passion for osu! and wants to
-                                rediscover the joy of playing. At its heart, it’s about having fun and bringing people
-                                together through the game we all love.
+                                This is a community-first project for anyone who shares our passion for osu! and who prefer
+                                this way of play. At its heart, it’s about having fun.
                             </p>
                             <p className='my-4'>
                                 As a software developer balancing this project with my full-time job, I kindly ask for
                                 your patience as we work to deliver on these promises. Your support and excitement mean
                                 the world to us.
                             </p>
-                            <p className='my-4'>Together, let’s create something truly special.</p>
+                            {/* <p className='my-4'>Together, let’s create something truly special.</p> */}
                             <p className='mb-4 font-bold'>Lionz at Komako.</p>
                             <button
                                 className="bg-[#7E8FAF] hover:bg-[#B8C5DD] text-white px-2 py-1 rounded font-bold text-sm"
