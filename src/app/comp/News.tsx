@@ -108,7 +108,7 @@ export default function News() {
                             </p> */}
                             <p className='my-4'>
                                 The idea came from personal feelings and conversations I had with friends who feel the same
-                                way around the game. When they said they'd rather play a version with the classic experience it 
+                                way around the game. When they said they would rather play a version with the classic experience it 
                                 motivated me to work and come up with this fun project.
                             </p>
                             <p className='font-bold text-lg'>Design and Inspiration</p>
