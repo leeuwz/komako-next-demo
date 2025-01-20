@@ -5,7 +5,7 @@ interface FooterProps {
     className?: string;
 }
 
-export default function Footer({ className }: FooterProps) {
+export default function Footer({}: FooterProps) {
     return(
         <div className="" style={{ backgroundImage: 'url(/assets/bg-dark.png)', }}>
             <div className="max-w-[1000px] mx-auto">
