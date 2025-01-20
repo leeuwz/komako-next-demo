@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "komako!",
-  description: "",
+  description: "silly little project",
   icons: {
-    icon: "/assets/favicon.jpg",
+    icon: "/favicon.ico",
   },
 };
 

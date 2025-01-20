@@ -24,7 +24,9 @@ export default function Hero() {
                     alt=""
                     width={400}
                     height={400}
-                    className="absolute top-0 left-0 hidden md:flex"
+                    className="absolute top-0 left-0 hidden md:flex select-none pointer-events-none"
+                    draggable={false}
+                    onContextMenu={(e) => e.preventDefault()}
                 />
 
                 <div className="text-center md:text-end">
@@ -36,7 +38,7 @@ export default function Hero() {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex gap-2">
+                <div className="flex gap-2 select-none">
                     <div className="cursor-pointer rounded bg-[#7E8FAF] w-fit py-[10px] px-[10px] flex gap-[8px] hover:bg-[#B8C5DD] transition items-center"
                     onClick={() => setShowModal(true)}>
                     <Image
@@ -45,6 +47,8 @@ export default function Hero() {
                         width={22}
                         height={22}
                         className="invert"
+                        draggable={false}
+                        onContextMenu={(e) => e.preventDefault()}
                     />
                     <p className="font-bold text-base md:text-lg">Info</p>
                     </div>
@@ -57,6 +61,8 @@ export default function Hero() {
                             width={22}
                             height={22}
                             className="invert"
+                            draggable={false}
+                            onContextMenu={(e) => e.preventDefault()}
                         />
                         <p className="font-bold text-base md:text-lg">Discord</p>
                     </div>
@@ -69,6 +75,8 @@ export default function Hero() {
                             width={22}
                             height={22}
                             className="invert"
+                            draggable={false}
+                            onContextMenu={(e) => e.preventDefault()}
                         />
                         <p className="font-bold text-base md:text-lg">Sign up</p>
                     </div>
@@ -104,6 +112,8 @@ export default function Hero() {
                                         width: "100%",
                                         objectFit: "cover",
                                     }}
+                                    draggable={false}
+                                    onContextMenu={(e) => e.preventDefault()}
                                     sizes="(min-width: 768px) 160px, 120px"
                                 />
                             </div>

@@ -76,13 +76,15 @@ export default function News() {
                                     alt=""
                                     width={1000}
                                     height={160}
-                                    className='rounded-xl'
+                                    className='rounded-xl select-none'
                                     style={{
                                         height: "120px",
                                         width: "100%",
                                         objectFit: "cover",
                                     }}
                                     sizes="(min-width: 768px) 160px, 120px"
+                                    draggable={false}
+                                    onContextMenu={(e) => e.preventDefault()}
                                 />
                             </div>
                             <p className="text-2xl font-bold mt-4">Introducing komako, what can you expect.</p>
@@ -168,6 +170,7 @@ function NewsPost({ post, setShowModal }: NewsPostProps) {
                 src={post.imageSrc}
                 width={1000}
                 height={160}
+                className="select-none"
                 style={{
                     height: "160px",
                     width: "100%",
@@ -175,6 +178,8 @@ function NewsPost({ post, setShowModal }: NewsPostProps) {
                     borderTopLeftRadius: "0.75rem",
                     borderTopRightRadius: "0.75rem",
                 }}
+                draggable={false}
+                onContextMenu={(e) => e.preventDefault()}
             />
 
             <div className="bg-[#302e38] px-[15px] py-[10px] rounded-b-xl group-hover:bg-[#3D3946] transition">

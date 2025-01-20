@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image"
 
 export default function Navigation() {
@@ -16,6 +17,8 @@ export default function Navigation() {
                         alt="alt"
                         width={16}
                         height={100}
+                        draggable={false}
+                        onContextMenu={(e) => e.preventDefault()}
                         src="/assets/uk.svg" />
                         <a href="" className="hover:text-[#f6a] transition">english</a>
                     </div>
