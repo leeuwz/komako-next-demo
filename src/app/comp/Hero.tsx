@@ -21,7 +21,7 @@ export default function Hero() {
 
             <div className="relative flex flex-col items-end items-center md:items-end justify-center px-[25px] md:px-[50px] gap-4 bg-[#18171c] bg-opacity-50 rounded-xl overflow-hidden" style={{ minHeight: "400px" }}>
                 <Image
-                    src="/assets/mascot.png"
+                    src="/assets/heroMascot.png"
                     alt=""
                     width={400}
                     height={400}
