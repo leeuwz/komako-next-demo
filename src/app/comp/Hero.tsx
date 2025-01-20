@@ -7,9 +7,9 @@ export default function Hero() {
     const [showModal, setShowModal] = useState(false);
     
     return (
-        <div className="relative">
+        <div className="relative bg-transparant">
             <video
-            className="absolute z-[-1] inset-0 bg-center object-cover w-full h-full rounded-xl"
+            className="absolute z-[-1] inset-0 bg-center object-cover w-full h-full md:rounded-xl"
             autoPlay
             loop
             muted
@@ -18,18 +18,18 @@ export default function Hero() {
             Your browser does not support the video tag.
             </video>
 
-            <div className="relative flex flex-col items-end justify-center px-[50px] gap-4 bg-[#18171c] bg-opacity-50 rounded-xl overflow-hidden" style={{ minHeight: "400px" }}>
+            <div className="relative flex flex-col items-end items-center md:items-end justify-center px-[25px] md:px-[50px] gap-4 bg-[#18171c] bg-opacity-50 rounded-xl overflow-hidden" style={{ minHeight: "400px" }}>
                 <Image
                     src="/assets/mascot.png"
                     alt=""
                     width={400}
                     height={400}
-                    className="absolute top-0 left-0"
+                    className="absolute top-0 left-0 hidden md:flex"
                 />
 
-                <div className="text-end">
-                    <p className="text-5xl font-bold">komako</p>
-                    <p className="text-xl">A renewed way to experience osu</p>
+                <div className="text-center md:text-end">
+                    <p className="text-[40px] sm:text-5xl font-bold">komako</p>
+                    <p className="text-lg sm:text-xl">A renewed way to experience osu</p>
                     <p className="text-lg text-[#f6a] leading-5">
                     with the classic system you love!
                     </p>
@@ -37,7 +37,7 @@ export default function Hero() {
 
                 {/* Buttons */}
                 <div className="flex gap-2">
-                    <div className="cursor-pointer rounded bg-[#7E8FAF] w-fit py-[10px] px-[10px] flex gap-[8px] hover:bg-[#B8C5DD] transition"
+                    <div className="cursor-pointer rounded bg-[#7E8FAF] w-fit py-[10px] px-[10px] flex gap-[8px] hover:bg-[#B8C5DD] transition items-center"
                     onClick={() => setShowModal(true)}>
                     <Image
                         src="/icons/info.svg"
@@ -46,10 +46,10 @@ export default function Hero() {
                         height={22}
                         className="invert"
                     />
-                    <p className="font-bold text-lg">Info</p>
+                    <p className="font-bold text-base md:text-lg">Info</p>
                     </div>
                         
-                    <div className="cursor-pointer rounded bg-[#5639AC] w-fit py-[10px] px-[10px] flex gap-[8px] hover:bg-[#8c66ff] transition"
+                    <div className="cursor-pointer rounded bg-[#5639AC] w-fit py-[10px] px-[10px] flex gap-[8px] hover:bg-[#8c66ff] transition items-center"
                     onClick={() => alert("Will be added soon!")}>
                         <Image
                             src="/icons/discord.svg"
@@ -58,10 +58,10 @@ export default function Hero() {
                             height={22}
                             className="invert"
                         />
-                        <p className="font-bold text-lg">Discord</p>
+                        <p className="font-bold text-base md:text-lg">Discord</p>
                     </div>
 
-                    <div className="cursor-pointer rounded bg-[#c2266b] w-fit py-[10px] px-[10px] flex gap-[8px] hover:bg-[#f6a] transition"
+                    <div className="cursor-pointer rounded bg-[#c2266b] w-fit py-[10px] px-[10px] flex gap-[8px] hover:bg-[#f6a] transition items-center"
                     onClick={() => alert("This will be added later, this site serves purely as a proof of concept.")}>
                         <Image
                             src="/icons/login.svg"
@@ -70,15 +70,15 @@ export default function Hero() {
                             height={22}
                             className="invert"
                         />
-                        <p className="font-bold text-lg">Sign up</p>
+                        <p className="font-bold text-base md:text-lg">Sign up</p>
                     </div>
                 </div>
             </div>
 
             {showModal && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity z-50" onClick={() => setShowModal(false)}>
-                    <div className="bg-[#303033] p-8 rounded-lg shadow-lg max-w-[850px] w-full flex" onClick={(e) => e.stopPropagation()}>
-                        <div className="w-1/4 pr-4 border-r border-gray-600">
+                <div className="fixed p-4 lg:p-0 inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity z-50" onClick={() => setShowModal(false)}>
+                    <div className="bg-[#303033] p-4 md:p-8 rounded-lg shadow-lg max-w-[850px] w-full flex" onClick={(e) => e.stopPropagation()}>
+                        <div className="w-1/4 pr-4 border-r border-gray-600 hidden lg:block">
                             <div className='bg-[#4a6267] p-1 rounded-lg mb-2 flex gap-4 justify-center'>
                                 <p className="cursor-pointer font-bold">2025</p>
                                 <p className="cursor-pointer font-bold text-gray-400 hover:underline">2024</p>
@@ -88,7 +88,7 @@ export default function Hero() {
                                 <li className="cursor-pointer hover:underline">Introducing komako...</li>
                             </ul>
                         </div>
-                        <div className="w-3/4 pl-4 overflow-y-scroll max-h-[600px] pr-5">
+                        <div className="w-full lg:w-3/4 pl-4 overflow-y-scroll max-h-[450px] md:max-h-[600px] pr-5">
                             <div className='relative'>
                                 <div className="absolute top-[4%] right-[1%] bg-[#18171c80] px-[20px] py-[5px] rounded-xl">
                                     <p className="font-bold text-[10px]">19 JAN 2025</p>
@@ -100,10 +100,11 @@ export default function Hero() {
                                     height={160}
                                     className='rounded-xl'
                                     style={{
-                                        height: "160px",
+                                        height: "120px",
                                         width: "100%",
                                         objectFit: "cover",
                                     }}
+                                    sizes="(min-width: 768px) 160px, 120px"
                                 />
                             </div>
                             <p className="text-2xl font-bold mt-4">Introducing komako, what can you expect.</p>

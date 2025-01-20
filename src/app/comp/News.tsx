@@ -37,7 +37,7 @@ export default function News() {
 
     return (
         <div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 lg:px-0">
                 <div className="col-span-1 md:col-span-3">
                     <NewsPost post={newsPosts[0]} setShowModal={setShowModal} />
                 </div>
@@ -54,9 +54,9 @@ export default function News() {
             </div>
 
             {showModal && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity z-50" onClick={() => setShowModal(false)}>
-                    <div className="bg-[#303033] p-8 rounded-lg shadow-lg max-w-[850px] w-full flex" onClick={(e) => e.stopPropagation()}>
-                        <div className="w-1/4 pr-4 border-r border-gray-600">
+                <div className="fixed p-4 lg:p-0 inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity z-50" onClick={() => setShowModal(false)}>
+                    <div className="bg-[#303033] p-4 md:p-8 rounded-lg shadow-lg max-w-[850px] w-full flex" onClick={(e) => e.stopPropagation()}>
+                        <div className="w-1/4 pr-4 border-r border-gray-600 hidden lg:block">
                             <div className='bg-[#4a6267] p-1 rounded-lg mb-2 flex gap-4 justify-center'>
                                 <p className="cursor-pointer font-bold">2025</p>
                                 <p className="cursor-pointer font-bold text-gray-400 hover:underline">2024</p>
@@ -66,7 +66,7 @@ export default function News() {
                                 <li className="cursor-pointer hover:underline">Introducing komako...</li>
                             </ul>
                         </div>
-                        <div className="w-3/4 pl-4 overflow-y-scroll max-h-[600px] pr-5">
+                        <div className="w-full lg:w-3/4 pl-4 overflow-y-scroll max-h-[450px] md:max-h-[600px] pr-5">
                             <div className='relative'>
                                 <div className="absolute top-[4%] right-[1%] bg-[#18171c80] px-[20px] py-[5px] rounded-xl">
                                     <p className="font-bold text-[10px]">19 JAN 2025</p>
@@ -78,10 +78,11 @@ export default function News() {
                                     height={160}
                                     className='rounded-xl'
                                     style={{
-                                        height: "160px",
+                                        height: "120px",
                                         width: "100%",
                                         objectFit: "cover",
                                     }}
+                                    sizes="(min-width: 768px) 160px, 120px"
                                 />
                             </div>
                             <p className="text-2xl font-bold mt-4">Introducing komako, what can you expect.</p>

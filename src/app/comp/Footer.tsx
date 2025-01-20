@@ -11,23 +11,23 @@ export default function Footer({ className }: FooterProps) {
             <div className="max-w-[1000px] mx-auto">
                 <div>
                     {/* footer site map */}
-                    <div className="grid grid-cols-3 m-[35px] flex gap-[10px] max-w-[800px] mx-auto text-sm">
-                       <div>
-                           <p className="font-bold text-[15px]">General</p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 m-[35px] flex gap-[10px] max-w-[800px] mx-auto text-[12px] md:text-sm">
+                       <div className="flex flex-col items-center md:items-start">
+                           <p className="font-bold text-[13px] md:text-[15px]">General</p>
                            <p>Home</p>
                            <p>Changelog</p>
                            <p>Beatmap Listing</p>
                            <p>Download osu!</p>
                        </div>
-                       <div>
-                           <p className="font-bold text-[15px]">Help & Community</p>
+                       <div className="flex flex-col items-center md:items-start">
+                           <p className="font-bold text-[13px] md:text-[15px]">Help & Community</p>
                            <p>Frequently Asked Questions</p>
                            <p>Community Forums</p>
                            <p>Live Streams</p>
                            <p>Wiki</p>
                        </div>
-                       <div>
-                           <p className="font-bold text-[15px]">Legal & Status</p>
+                       <div className="flex flex-col items-center md:items-start">
+                           <p className="font-bold text-[13px] md:text-[15px]">Legal & Status</p>
                            <p>Terms</p>
                            <p>Privacy</p>
                            <p>Server Status</p>

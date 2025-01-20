@@ -25,7 +25,7 @@ export default function Home() {
       ></div>
 
       <div 
-      className="relative flex-1 max-w-[1000px] mx-auto font-[family-name:var(--font-helvetica-neue)]">
+      className="relative flex-1 w-full max-w-[1000px] mx-auto font-[family-name:var(--font-helvetica-neue)]">
         <Navigation />
         <div className="flex flex-col gap-[20px]">
           <Hero />
