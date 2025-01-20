@@ -4,7 +4,7 @@ export default function Navigation() {
     return (
         <div className="flex justify-between">
             <div className="flex text-[12px] gap-5 my-[30px] mx-[20px]">
-                <a href="" className="hover:text-[#f6a] transition">start</a>
+                <a href="" className="hover:text-[#f6a] transition">home</a>
                 <a href="" className="hover:text-[#f6a] transition">beatmaps</a>
                 <a href="" className="hover:text-[#f6a] transition">rankings</a>
                 <a href="" className="hover:text-[#f6a] transition">community</a>
