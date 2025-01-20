@@ -32,6 +32,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@lionzosu",
+    title: "komako!",
+    description: "silly little project",
+    images: "https://next.komako.pw/assets/icon.png",
+  },
 };
 
 export const viewport = {
