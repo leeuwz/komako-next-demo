@@ -19,6 +19,21 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    type: "website",
+    url: "https://next.komako.pw",
+    title: "komako!",
+    description: "silly little project",
+    images: [
+      {
+        url: "https://next.komako.pw/favicon.ico",
+        width: 400,
+        height: 400,
+        alt: "",
+      },
+    ],
+  },
+  themeColor: "#ff00ff",
 };
 
 export default function RootLayout({
