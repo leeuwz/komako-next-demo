@@ -120,48 +120,77 @@ export default function Hero() {
                             </div>
                             <p className="text-2xl font-bold mt-4">Introducing komako, what can you expect.</p>
                             <p className='text-base'>by <span className='font-bold'>komako team</span></p>
-                            <p className='my-4'>
+                            {/* <p className='my-4'>
                                 At Komako, we’re driven by a vision: to address the challenges we see in osu! today and breathe
                                 new life into the experience. From the decline in quality to questionable changes in the
                                 reward system, we felt it was time to create something that offers players a different/classic
                                 way to enjoy the game.
-                            </p>
+                            </p> */}
                             <p className='my-4'>
+                                At Komako, we want to keep enjoying osu the way we prefer, but over recent time this has become
+                                unfeasible due to recent changes to the rewards system, merging lazer scores with stable, removal
+                                of combo scale et cetera. We want to take komako to a higher level and offer a classic experience,
+                                but also bring some new touches to the table.
+                            </p>
+                            {/* <p className='my-4'>
                                 This idea stemmed from personal frustrations and conversations with friends who
                                 shared the same feelings. When they suggested that my existing private server could become
                                 something more, I knew this project might be a fun idea.
+                            </p> */}
+                            <p className='my-4'>
+                                The idea came from personal feelings and conversations I had with friends who feel the same
+                                way around the game. When they said they'd rather play a version with the classic experience it 
+                                motivated me to work and come up with this fun project.
                             </p>
                             <p className='font-bold text-lg'>Design and Inspiration</p>
-                            <p className='mb-4'>
+                            {/* <p className='mb-4'>
                                 Our goal is to evolve the look and feel of Komako with inspiration from the original.
                                 Expect a clean and modern look with outstanding features.
+                            </p> */}
+                            <p className='mb-4'>
+                                We won't actually use the design from the original server, but it will be inspired by it.
+                                Expect a more modern approach with unique features.
                             </p>
                             <p className='font-bold text-lg'>Why Komako?</p>
-                            <p className='mb-4'>
+                            {/* <p className='mb-4'>
                                 Our goal/motive is not to compete with Bancho but to provide an alternative experience for players who
                                 prefer the old reward system and rather take a step back from having to perform or to try something completely different.
                                 But we’re not just looking back; we’re also moving forward.
+                            </p> */}
+                            <p className='mb-4'>
+                                Our goal or motive is not to compete with or frown upon the game/bancho, rather offer players an alternative experience
+                                for those who prefer the old system and mechanics, take a step back from having to perform or to try something completely
+                                different. We're also planning new features. 
                             </p>
                             <div className='my-4'>
-                                <p>At Komako, we strive to introduce:</p>
+                                <p>At Komako, we plan to introduce:</p>
                                 <ol className='pl-5'>
                                     <li style={{ listStyleType: 'disc' }}><span className='font-bold'>New features</span> previously unseen on the official server.</li>
                                     <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Combo Scaling</span> welcome back, you have been missed.</li>
-                                    <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Note Lock</span> mixing lazer scores with stable was a big mistake.</li>
+                                    <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Note Lock</span> mixing lazer scores with stable was not very epic.</li>
                                     <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Farm Slop</span> stricter map status decisions.</li>
-                                    <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Customizability</span> options to let players tailor their experience.</li>
-                                    <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Innovative challenges</span> take things to a higher level.</li>
+                                    <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Customizability</span> options to let players create their own experience.</li>
+                                    <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Innovative challenges</span> optional ways to take things to a higher level.</li>
                                     <li style={{ listStyleType: 'disc' }}><span className='font-bold'>Profile Grading</span> your scores reflect your grade.</li>
                                 </ol>
                             </div>
-                            <p className='my-4'>
+                            {/* <p className='my-4'>
                                 This is a community-first project for anyone who shares our passion for osu! and who prefer
                                 this way of play. At its heart, it’s about having fun.
-                            </p>
+                            </p> */}
                             <p className='my-4'>
+                                This is a community driven project, anyone who shares the passion for this state of the game and way of play.
+                                Anyone is welcome to shoot in ideas or suggestions et cetera.
+                            </p>
+                            {/* <p className='my-4'>
                                 As a software developer balancing this project with my full-time job, I kindly ask for
                                 your patience as we work to deliver on these promises. Your support and excitement mean
                                 the world to us.
+                            </p> */}
+                            <p className='my-4'>
+                                As a software developer balancing this project with my full time job is kinda tricky, I kindly
+                                ask for understanding and patience as I work to deliver and continue to work on this project.
+                                Support and excitement means the world to me.
                             </p>
                             {/* <p className='my-4'>Together, let’s create something truly special.</p> */}
                             <p className='mb-4 font-bold'>Lionz at Komako.</p>
