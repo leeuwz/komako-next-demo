@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: "https://next.komako.pw/favicon.ico",
         width: 400,
         height: 400,
-        alt: "",
+        alt: "komako! favicon",
       },
     ],
   },
