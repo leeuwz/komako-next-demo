@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: "silly little project",
     images: [
       {
-        url: "https://next.komako.pw/assets/icon.png",
+        url: "https://next.komako.pw/assets/icon.jpg",
         width: 400,
         height: 400,
         alt: "komako! favicon",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     site: "@lionzosu",
     title: "komako!",
     description: "silly little project",
-    images: "https://next.komako.pw/assets/icon.png",
+    images: "https://next.komako.pw/assets/icon.jpg",
   },
 };
 
