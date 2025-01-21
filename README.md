@@ -5,7 +5,7 @@ Simple project demo written with NextJS + Tailwind
 Edit or view the project:
 
 ```bash
-npm install, npm run dev
+npm install; npm run dev
 ```
 
 Then visit: [http://localhost:3000](http://localhost:3000)
