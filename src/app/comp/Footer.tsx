@@ -31,7 +31,7 @@ export default function Footer({}: FooterProps) {
                            <p>Terms</p>
                            <p>Privacy</p>
                            <p>Server Status</p>
-                           <p>Source Code</p>
+                           <a className="hover:text-[#f6a]" href="https://github.com/leeuwz/komako-next-demo">Source Code</a>
                        </div>
                     </div>
 
@@ -41,6 +41,16 @@ export default function Footer({}: FooterProps) {
                         onClick={() => window.open("https://paypal.me/leeuwz", "_blank")}>
                             <Image
                                 src="/icons/heart.svg"
+                                alt="alt"
+                                width={24}
+                                height={24}
+                                className="invert"
+                            />
+                        </div>
+                        <div className="flex items-center border-[3px] rounded-full p-[8px] cursor-pointer"
+                        onClick={() => window.open("https://github.com/leeuwz", "_blank")}>
+                            <Image
+                                src="/icons/github.svg"
                                 alt="alt"
                                 width={24}
                                 height={24}
