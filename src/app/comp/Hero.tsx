@@ -19,7 +19,7 @@ export default function Hero() {
             Your browser does not support the video tag.
             </video>
 
-            <div className="relative flex flex-col items-end items-center md:items-end justify-center px-[25px] md:px-[50px] gap-4 bg-[#18171c] bg-opacity-50 rounded-xl overflow-hidden" style={{ minHeight: "400px" }}>
+            <div className="relative flex flex-col items-end items-center md:items-end justify-center px-[25px] md:px-[50px] gap-2 bg-[#18171c] bg-opacity-50 rounded-xl overflow-hidden" style={{ minHeight: "400px" }}>
                 <Image
                     src="/assets/heroMascot.png"
                     alt=""
@@ -81,6 +81,11 @@ export default function Hero() {
                         />
                         <p className="font-bold text-base md:text-lg">Sign up</p>
                     </div>
+                </div>
+
+                {/* visit old */}
+                <div className="hidden md:block absolute bottom-[2%] right-[1%] text-center md:text-end">
+                    <a href='https://komako.pw' target='_blank' className="sm:text-sm text-[#f6a] hover:underline">visit previous version of komako</a>
                 </div>
             </div>
 
